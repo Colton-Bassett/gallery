@@ -2,8 +2,8 @@
 
 ## TODO
 
-- [ ] Deploy (vercel)
-- [ ] Scaffold basic ui with mock data
+- [x] Deploy (vercel)
+- [x] Scaffold basic ui with mock data
 - [ ] Setup a real database (vercel postgres)
 - [ ] Attach database to UI
 - [ ] Add authentication (clerk)
@@ -13,3 +13,10 @@
 - [ ] Delete button (Server actions)
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
+
+## Scripts
+
+```bash
+pnpm dev
+# launch development server with live reloading, updates, and debugging.
+```
