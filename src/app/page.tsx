@@ -3,6 +3,10 @@ import { db } from "~/server/db";
 
 // Serverside Rendered component
 
+// Tell next.js that this page is dynamic-rendering instead of static or auto.
+// Updates on every request instead of showing a cached or static version.
+export const dynamic = "force-dynamic";
+
 const mockUrls = [
   "https://utfs.io/f/2900c05a-2892-42f8-b8b5-2cc159e958a0-wjszdb.jpg",
   "https://utfs.io/f/fbb84244-3cf4-4f80-aed7-36ae8dbe4077-vex5ur.jpg",
