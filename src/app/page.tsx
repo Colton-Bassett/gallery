@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { db } from "~/server/db";
+
+// Serverside Rendered component
 
 const mockUrls = [
   "https://utfs.io/f/2900c05a-2892-42f8-b8b5-2cc159e958a0-wjszdb.jpg",
@@ -12,12 +15,19 @@ const mockImages = mockUrls.map((url, index) => ({
   url,
 }));
 
-export default function HomePage() {
+// This is running ONLY on the server (can do database calls and not have to worry about it. Can even call sql directly here.)
+export default async function HomePage() {
+  const posts = await db.query.posts.findMany();
+  console.log(posts);
+
   return (
     <main className="">
       <div className="flex flex-wrap gap-4 p-4">
-        {[...mockImages, ...mockImages, ...mockImages].map((image) => (
-          <div key={image.id} className="w-48">
+        {posts.map((post) => (
+          <div key={post.id}>{post.name}</div>
+        ))}
+        {[...mockImages, ...mockImages, ...mockImages].map((image, index) => (
+          <div key={image.id + "-" + index} className="w-48">
             <img src={image.url}></img>
           </div>
         ))}
