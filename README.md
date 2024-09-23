@@ -9,8 +9,8 @@
 - [x] Attach database to UI (drizzle)
 - [x] Add authentication (clerk)
 - [x] Add image upload
-- [ ] "taint" (server-only)
-- [ ] use next Image component
+- [x] "taint" (server-only)
+- [x] use next Image component
 - [ ] Error management (Sentry)
 - [ ] Routing/image page (Next router parallel route)
 - [ ] Delete button (Server actions)
