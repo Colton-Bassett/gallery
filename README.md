@@ -5,13 +5,13 @@
 - [x] Deploy (vercel)
 - [x] Scaffold basic ui with mock data
 - [x] Tidy build process
-- [x] Setup a real database (vercel postgres)
-- [x] Attach database to UI (drizzle)
-- [x] Add authentication (clerk)
-- [x] Add image upload
+- [x] Setup a real database (vercel postgres; for image data)
+- [x] Attach database to UI (drizzle; for typescript queries & local database manipulation)
+- [x] Add authentication (clerk; for login, sign-up, and sessions)
+- [x] Add image upload (uploadthing; s3 wrapper for image storage)
 - [x] "taint" (server-only)
 - [x] use next Image component
-- [ ] Error management (Sentry)
+- [x] Error management (Sentry.io; cloud error management, performance tracking)
 - [ ] Routing/image page (Next router parallel route)
 - [ ] Delete button (Server actions)
 - [ ] Analytics (posthog)
@@ -33,3 +33,10 @@ git add -p
 # stage each change interactively, accept or skip specific changes.
 # [y: stage, n: skip, q: quit, a: all, d: skip all, e: edit]
 ```
+
+## Dev Notes
+
+- Vercel: gh
+- Clerk: urm
+- Uploadthing: gh
+- Sentry.io: goog
