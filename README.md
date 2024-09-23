@@ -8,7 +8,7 @@
 - [x] Setup a real database (vercel postgres)
 - [x] Attach database to UI (drizzle)
 - [x] Add authentication (clerk)
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] "taint" (server-only)
 - [ ] use next Image component
 - [ ] Error management (Sentry)
