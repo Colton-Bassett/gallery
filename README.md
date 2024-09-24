@@ -13,6 +13,7 @@
 - [x] use next Image component
 - [x] Error management (Sentry.io; cloud error management, performance tracking)
 - [x] Routing/image page (Next router parallel route)
+- [x] Add Shadcn for toasts
 - [ ] Delete button (Server actions)
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
