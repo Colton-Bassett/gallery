@@ -40,14 +40,14 @@ export default function RootLayout({
           </div>
           {modal}
           <div id="modal-root"></div>
-          <Toaster
+          {/* <Toaster
             toastOptions={{
-              unstyled: true,
               classNames: {
-                toast: "dark",
+                toast: "black",
               },
             }}
-          />
+          /> */}
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
