@@ -12,7 +12,7 @@
 - [x] "taint" (server-only)
 - [x] use next Image component
 - [x] Error management (Sentry.io; cloud error management, performance tracking)
-- [ ] Routing/image page (Next router parallel route)
+- [x] Routing/image page (Next router parallel route)
 - [ ] Delete button (Server actions)
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
