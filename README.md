@@ -13,7 +13,9 @@
 - [x] use next Image component
 - [x] Error management (Sentry.io; cloud error management, performance tracking)
 - [x] Routing/image page (Next router parallel route)
-- [x] Add Shadcn for toasts
+- [x] Add UI Button
+- [x] Add toasts (Shadcn, ui/component library)
+- [x] Add dark mode and sonner/toast from Shadcn
 - [ ] Delete button (Server actions)
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
