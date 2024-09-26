@@ -18,7 +18,7 @@
 - [x] Add dark mode and sonner/toast from Shadcn
 - [x] Add analytics (posthog: clicks, refreshes, uploads, recordings)
 - [x] Add Delete button (Server action)
-- [ ] Add Delete button analytics (posthog-node)
+- [x] Add Delete button analytics (posthog-node)
 - [ ] Ratelimiting (upstash)
 
 ## Scripts
