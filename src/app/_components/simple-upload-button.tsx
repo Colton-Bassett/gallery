@@ -97,6 +97,20 @@ export function SimpleUploadButton() {
         },
       );
     },
+    onUploadError(error) {
+      posthog.capture("upload_error", { error });
+      toast.dismiss("upload-begin");
+      toast.error(
+        <div className="flex items-center gap-2 text-white">
+          <span className="text-lg">Upload failed. Retry soon</span>
+        </div>,
+        {
+          classNames: {
+            toast: "bg-slate-950 border-slate-700",
+          },
+        },
+      );
+    },
     onClientUploadComplete() {
       toast.dismiss("upload-begin");
       toast(
