@@ -16,8 +16,8 @@
 - [x] Add UI Button
 - [x] Add toasts (Shadcn, ui/component library)
 - [x] Add dark mode and sonner/toast from Shadcn
-- [ ] Analytics (posthog)
-- [ ] Delete button (Server actions)
+- [x] Add analytics (posthog: clicks, refreshes, uploads, recordings)
+- [x] Add Delete button (Server action)
 - [ ] Ratelimiting (upstash)
 
 ## Scripts
