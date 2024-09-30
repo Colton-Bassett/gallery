@@ -20,9 +20,9 @@ export const ourFileRouter = {
       if (!user.userId) throw new UploadThingError("Unauthorized");
 
       // Making sure only allowed users can upload things
-      const fullUserData = await clerkClient.users.getUser(user.userId);
-      if (fullUserData?.privateMetadata?.["can-upload"] !== true)
-        throw new UploadThingError("User Does Not Have Upload Permissions");
+      //   const fullUserData = await clerkClient.users.getUser(user.userId);
+      //   if (fullUserData?.privateMetadata?.["can-upload"] !== true)
+      //     throw new UploadThingError("User Does Not Have Upload Permissions");
 
       // upstash ratelimiter
       const { success } = await ratelimit.limit(user.userId);

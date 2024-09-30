@@ -1,6 +1,10 @@
-# Gallery
+# Photo Upload App "Gallery"
 
-## TODO
+[Gallery](https://gallery-seven-ebon.vercel.app/) is a photo upload app that allows users to store images in various formats, displayed in a gallery view. Built with Next.js, it uses Vercel Postgres for image data storage and [Uploadthing](https://uploadthing.com/) (an S3 wrapper) for image hosting. Authentication, login, and sessions are managed through [Clerk](https://clerk.com/). Error monitoring and performance tracking are done with [Sentry.io](https://sentry.io/welcome/), while [Posthog](https://posthog.com/) handles analytics, and [Upstash](https://upstash.com/) takes care of upload rate-limiting. A few UI components come from [Shadcn](https://ui.shadcn.com/).
+
+NOTE: Uploads are currently capped at 2 per minute to prevent abuse.
+
+## Todo
 
 - [x] Deploy (vercel)
 - [x] Scaffold basic ui with mock data
@@ -19,7 +23,7 @@
 - [x] Add analytics (posthog: clicks, refreshes, uploads, recordings)
 - [x] Add Delete button (Server action)
 - [x] Add Delete button analytics (posthog-node)
-- [ ] Ratelimiting (upstash)
+- [x] Ratelimiting (upstash)
 
 ## Scripts
 
@@ -40,7 +44,14 @@ git add -p
 
 ## Dev Notes
 
+- Users can upload 2 files every 60 seconds.
+- To enable authorized-users-only upload --> api/uploadthing/core.ts --> fullUserData
+- To authorize users, Clerk --> Users --> Private --> {"can-upload: true"}
+
+## Misc
+
 - Vercel: gh
 - Clerk: urm
 - Uploadthing: gh
 - Sentry.io: goog
+- Upstash: gh

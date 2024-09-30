@@ -102,7 +102,9 @@ export function SimpleUploadButton() {
       toast.dismiss("upload-begin");
       toast.error(
         <div className="flex items-center gap-2 text-white">
-          <span className="text-lg">Upload failed. Retry soon</span>
+          <span className="text-lg">
+            Upload rate-limited. Retry in a minute.
+          </span>
         </div>,
         {
           classNames: {
