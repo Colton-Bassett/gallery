@@ -36,9 +36,11 @@ async function Images() {
 // This is running ONLY on the server (can do database calls and not have to worry about it. Can even call sql directly here.)
 export default async function HomePage() {
   return (
-    <main className="">
+    <main className="flex h-full w-full justify-center">
       <SignedOut>
-        <div className="h-full w-full text-center text-2xl">Please Sign in</div>
+        <div className="flex h-full w-full items-center justify-center text-center text-2xl">
+          Please Sign in
+        </div>
       </SignedOut>
       <SignedIn>
         <Images></Images>
